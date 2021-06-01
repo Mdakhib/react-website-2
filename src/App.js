@@ -1,10 +1,15 @@
 import React from 'react';
+import { BrowserRouter as Router, Switch, Route } from "react-router-dom";
+import Navbar from "./components/Navbar";
 
 function App() {
   return (
-    <>
-      <h1>hai</h1>
-    </>
+    <Router>
+      <Navbar />
+      <Switch>
+        <Route path="/"></Route>
+      </Switch>
+    </Router>
   );
 }
 
