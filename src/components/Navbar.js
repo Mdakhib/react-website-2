@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import '../App.css'
 import { Link } from "react-router-dom";
 import { MdFingerprint } from "react-icons/md";
@@ -18,7 +18,11 @@ const Navbar = () => {
         } else {
             setButton(true)
         }
-    }
+  }
+  
+  useEffect(() => {
+    showButton()
+  },[])
 
     window.addEventListener('resize',showButton)
     
