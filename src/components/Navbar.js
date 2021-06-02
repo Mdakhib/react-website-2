@@ -5,6 +5,7 @@ import { MdFingerprint } from "react-icons/md";
 import { FaBars, FaTimes } from "react-icons/fa";
 import './Navbar.css'
 import { Button } from "./Button";
+import { IconContext } from "react-icons/lib";
 
 const Navbar = () => {
   const [click, setClick] = useState(false);
@@ -28,6 +29,8 @@ const Navbar = () => {
     
   return (
     <>
+      <IconContext.Provider value={{ color: '#fff' }}>
+        
       <div className="navbar">
         <div className="navbar-container container">
           <Link to="/" className="navbar-logo">
@@ -69,6 +72,7 @@ const Navbar = () => {
           </ul>
         </div>
       </div>
+      </IconContext.Provider>
     </>
   );
 };
