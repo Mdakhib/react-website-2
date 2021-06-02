@@ -22,7 +22,7 @@ export const Button = ({
         : SIZES[0];
     const checkButtonColor = COLOR.includes(buttonColor)
       ? buttonColor
-        : COLOR[0];
+        : null;
     
   return (
     <button
