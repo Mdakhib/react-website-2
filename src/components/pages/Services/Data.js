@@ -1,9 +1,9 @@
 
 
 export const homeObjTwo = {
-  lightBg: false,
-  lightText: true,
-  lightTextDesc: true,
+  lightBg: true,
+  lightText: false,
+  lightTextDesc: false,
   topLine: "100% SECURE",
   headline: "Stay protected 24/7 anywhere anytime",
   description:
