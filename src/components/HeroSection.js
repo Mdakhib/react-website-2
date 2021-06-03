@@ -32,7 +32,7 @@ function HeroSection({
               <div className="home__hero-text-wrapper">
                 <div className="top-line">{topLine} </div>
                 <h1 className={lightText ? "heading" : "heading dark"}>
-                  {headLine}{" "}
+                  {headLine}
                 </h1>
                 <p
                   className={
@@ -41,7 +41,7 @@ function HeroSection({
                       : "home__hero-subtitle dark"
                   }
                 >
-                  {description}{" "}
+                  {description}
                 </p>
                 <Link to="/sign-up">
                   <Button buttonSize="btn--wide" buttonColor="blue">
